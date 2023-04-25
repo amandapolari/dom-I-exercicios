@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM I - Exercícios</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
 
-<head>
-  <title>DOM I - Exercícios</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-</head>
-
-<body>
-  <main>
-    <ul id="lista-de-frutas">
-      <li id="fruta-1"></li>
-      <li id="fruta-2"></li>
-      <li id="fruta-3"></li>
-      <li id="fruta-4"></li>
-    </ul>
-  </main>
-</body>
-
+    <body>
+        <main>
+            <label for="item-adicional">Digite aqui</label>
+            <input
+                type="text"
+                id="item-adicional"
+                onkeyup="imprimirDigitacaoConsole()"
+            />
+            <button id="btn" onclick="adicionarConteudo()">➕</button>
+            <ul id="lista-de-frutas">
+                <li id="fruta-1"></li>
+                <li id="fruta-2"></li>
+                <li id="fruta-3"></li>
+                <li id="fruta-4"></li>
+            </ul>
+        </main>
+    </body>
 </html>
